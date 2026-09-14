@@ -1,0 +1,16 @@
+node_modules
+dist
+coverage
+.DS_Store
+.env
+.env.*
+!.env.example
+.venv
+__pycache__
+*.py[cod]
+.pytest_cache
+.mypy_cache
+.ruff_cache
+.vite
+.vite-temp
+.cache

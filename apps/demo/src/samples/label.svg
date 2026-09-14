@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="720" height="420" viewBox="0 0 720 420">
+  <rect x="14" y="14" width="692" height="392" rx="34" fill="#f8a14b"/>
+  <path d="M44 322 190 50h87L132 366zM307 366 454 50h88L395 366zM555 366 641 184v142l-20 40z" fill="#143d42"/>
+  <circle cx="572" cy="116" r="48" fill="#f3e9bd"/>
+  <path d="M546 116h52M572 90v52" stroke="#143d42" stroke-width="12" stroke-linecap="round"/>
+  <text x="42" y="112" fill="#143d42" font-family="Arial, sans-serif" font-size="54" font-weight="800" letter-spacing="4">FIELD</text>
+  <text x="44" y="355" fill="#f8f3de" font-family="Arial, sans-serif" font-size="30" font-weight="700" letter-spacing="8">VISIBLE / SURFACE</text>
+</svg>

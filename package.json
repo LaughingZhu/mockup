@@ -1,0 +1,40 @@
+{
+  "name": "visible-surface-mockup",
+  "version": "0.1.0",
+  "private": true,
+  "license": "MIT",
+  "description": "A browser-first visible-surface mockup editor with depth-aware rendering.",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/LaughingZhu/mockup.git"
+  },
+  "bugs": {
+    "url": "https://github.com/LaughingZhu/mockup/issues"
+  },
+  "packageManager": "pnpm@9.15.4",
+  "engines": {
+    "node": ">=20.0.0",
+    "pnpm": ">=8.15.4"
+  },
+  "scripts": {
+    "dev": "pnpm --filter @visible-surface-mockup/demo dev",
+    "build": "pnpm --filter @visible-surface-mockup/demo build",
+    "typecheck": "pnpm -r typecheck",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "verify": "pnpm typecheck && pnpm test && pnpm build"
+  },
+  "devDependencies": {
+    "@testing-library/jest-dom": "^6.6.3",
+    "@testing-library/react": "^16.1.0",
+    "@types/node": "^22.10.2",
+    "@types/react": "^18.3.18",
+    "@types/react-dom": "^18.3.5",
+    "@types/three": "^0.172.0",
+    "@vitejs/plugin-react": "^4.3.4",
+    "jsdom": "^25.0.1",
+    "typescript": "^5.7.2",
+    "vite": "^6.0.7",
+    "vitest": "^2.1.8"
+  }
+}

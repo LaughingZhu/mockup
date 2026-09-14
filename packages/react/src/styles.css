@@ -1,0 +1,41 @@
+.surface-mockup-editor {
+  --surface-accent: #4bd7d7;
+  --surface-panel: rgba(15, 22, 31, .86);
+  --surface-text: #edf8f6;
+  --surface-border: rgba(255, 255, 255, .18);
+  display: flex;
+  min-width: 240px;
+  min-height: 220px;
+  flex-direction: column;
+  gap: 8px;
+  color: var(--surface-text);
+  font: 13px/1.4 system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+}
+.surface-mockup-stage { position: relative; width: 100%; min-height: 220px; overflow: hidden; border-radius: 14px; background: #10151c; }
+.surface-mockup-base, .surface-mockup-canvas { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: contain; }
+.surface-mockup-base { user-select: none; pointer-events: none; }
+.surface-mockup-canvas { outline: none; cursor: grab; object-fit: contain; touch-action: none; }
+.surface-mockup-canvas:active { cursor: grabbing; }
+.surface-mockup-status { position: absolute; inset: 0; display: grid; place-items: center; gap: 10px; padding: 20px; text-align: center; background: rgba(7, 11, 17, .54); backdrop-filter: blur(4px); }
+.surface-mockup-status button, .surface-mockup-toolbar button, .surface-mockup-review button { border: 1px solid var(--surface-border); border-radius: 999px; background: var(--surface-panel); color: var(--surface-text); cursor: pointer; padding: 7px 12px; }
+.surface-mockup-error { color: #ffd8d8; }
+.surface-mockup-review { position: absolute; inset: auto 12px 12px; display: grid; gap: 10px; padding: 13px; border: 1px solid var(--surface-border); border-radius: 12px; background: var(--surface-panel); box-shadow: 0 12px 40px rgba(0, 0, 0, .3); }
+.surface-mockup-review-copy { display: grid; gap: 2px; }
+.surface-mockup-review-copy span, .surface-mockup-toolbar span { color: rgba(237, 248, 246, .68); font-size: 12px; }
+.surface-mockup-candidates { display: flex; flex-wrap: wrap; gap: 6px; }
+.surface-mockup-candidates button.is-selected { border-color: var(--surface-accent); color: var(--surface-accent); }
+.surface-mockup-candidates small { opacity: .7; }
+.surface-mockup-confirm { justify-self: start; background: var(--surface-accent) !important; color: #071315 !important; border-color: transparent !important; font-weight: 650; }
+.surface-mockup-controls { position: absolute; inset: 0; pointer-events: none; }
+.surface-mockup-placement-box { position: absolute; pointer-events: auto; border: 1.5px dashed var(--surface-accent); box-shadow: 0 0 0 1px rgba(0, 0, 0, .26); cursor: move; }
+.surface-mockup-outside-preview { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: fill; pointer-events: none; opacity: .9; }
+.surface-mockup-handle { position: absolute; width: 10px; height: 10px; border: 1.5px solid #071315; border-radius: 50%; background: var(--surface-accent); transform: translate(-50%, -50%); }
+.surface-mockup-handle-nw { left: 0; top: 0; }
+.surface-mockup-handle-ne { left: 100%; top: 0; }
+.surface-mockup-handle-sw { left: 0; top: 100%; }
+.surface-mockup-handle-se { left: 100%; top: 100%; cursor: nwse-resize; }
+.surface-mockup-handle-rotate { left: 50%; top: -24px; cursor: crosshair; }
+.surface-mockup-rotate-stem { position: absolute; left: 50%; top: -18px; width: 1px; height: 18px; background: var(--surface-accent); transform: translateX(-50%); }
+.surface-mockup-toolbar { display: flex; align-items: center; gap: 8px; flex-wrap: wrap; }
+.surface-mockup-toolbar span { flex: 1 1 220px; }
+.surface-mockup-toolbar button { padding: 5px 9px; }
