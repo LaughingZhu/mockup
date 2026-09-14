@@ -2,6 +2,8 @@
 
 [English](README.md) · [简体中文](README.zh-CN.md)
 
+![Visible Surface Mockup 演示](docs/assets/mockup-demo.gif)
+
 一个浏览器优先的可见曲面 Mockup 编辑器：把设计放进照片的深度场，保持
 贴图可编辑，并使用同一个 Three.js 场景完成预览和 PNG 导出。
 

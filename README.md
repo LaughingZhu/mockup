@@ -2,6 +2,8 @@
 
 [English](README.md) · [简体中文](README.zh-CN.md)
 
+![Visible Surface Mockup demo](docs/assets/mockup-demo.gif)
+
 A browser-first visible-surface Mockup editor. Place artwork inside a photo's
 depth field, keep it editable while dragging, and use the same Three.js scene
 for preview and PNG export.
